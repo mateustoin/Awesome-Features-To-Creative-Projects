@@ -1,11 +1,15 @@
+# Importa o módulo responsável pela execução das funções
+# Import the module responsible for executing the functions
 from gtts import gTTS
-import time
-import os
 
+# Texto que será transformado em áudio
+# Text that will be transformed into audio
 text = 'Come abacate, filho. Abacate faz bem pra pele.'
 
-file = 'test.mp3'
-language = 'pt'
+# Criando o objeto com texto, língua e domínio da língua
+# Creating the object with text and language. If you don't specify any 'lang' and 'tld', english is default
+tts = gTTS(text, lang='pt', tld='com.br')
 
-tts = gTTS(text, lang=language, tld='com.br')
-tts.save(file)
+# Salva o arquivo de áudio criado
+# Saves the audio file created
+tts.save('audio_file.mp3')
