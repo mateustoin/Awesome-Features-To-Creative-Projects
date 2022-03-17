@@ -1,4 +1,4 @@
-# Exemplo de Texto para Fala (TTS, do inglês Text-To-Speech)
+# Exemplo de consumo de API
 
 <!--
     Colocar aqui Thumbnail com link p/ o vídeo do YouTube quando tiver.
