@@ -109,6 +109,24 @@ pygame.mixer.music.stop()
 
 Esse exemplo é apenas para mostrar um exemplo de código um pouco mais organizado, para que usuários iniciantes tenham uma noção de como podem organizar melhor o código para melhorar a qualidade dos seus projetos. O código necessariamente não possui nada novo, apenas reestruturado de uma forma simples e organizada.
 
+- Código que executa as funções criadas: 
+```python
+# Importando módulo criado na mesma pasta para organização do código
+# Importing module created on the same folder to organize code
+from TTSHandler import TTSHandler
+
+def main():
+    tts = TTSHandler()
+    pt_text = 'Testando criação de áudio, funcionando normal!'
+    en_text = 'Testing audio creation, it\'s working properly!'
+    tts.create_default_audio_to_folder(en_text, filename='en_audio.mp3')
+    tts.create_custom_audio_to_folder(pt_text, c_lang='pt', c_tld='com.br', filename='pt_audio.mp3')
+
+if __name__ == "__main__":
+    main()
+```
+
+- Código da classe criada: 
 ```python
 from io import BytesIO
 from gtts import gTTS
@@ -170,16 +188,6 @@ class TTSHandler:
         except:
             print("Error")
             return False
-
-def main():
-    tts = TTSHandler()
-    pt_text = 'Testando criação de áudio, funcionando normal!'
-    en_text = 'Testing audio creation, it\'s working properly!'
-    tts.create_default_audio_to_folder(en_text, filename='en_audio.mp3')
-    tts.create_custom_audio_to_folder(pt_text, c_lang='pt', c_tld='com.br', filename='pt_audio.mp3')
-
-if __name__ == "__main__":
-    main()
 ```
 
 </details>
