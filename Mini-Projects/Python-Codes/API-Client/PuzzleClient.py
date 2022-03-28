@@ -1,4 +1,3 @@
-from typing import Tuple
 import requests
 
 class PuzzleClient(object):
@@ -10,7 +9,7 @@ class PuzzleClient(object):
         self.last_question = ''
         self.las_answer = ''
 
-    def get_last_puzzle(self) -> Tuple(str, str):
+    def get_last_puzzle(self):
         # Retorna o último puzzle capturado pela API
         # Return last puzzle captured from API
         return self.last_question, self.last_answer
@@ -20,7 +19,7 @@ class PuzzleClient(object):
         # Generates new puzzle and prints on console
         self.response = requests.get(self.joke_url)
         
-        if self.response.status_code == 201:
+        if self.response.status_code == 200:
             self.last_question = self.response.json()['question']
             self.last_answer = self.response.json()['answer']
             print('Question: ' + self.last_question)
@@ -33,7 +32,7 @@ class PuzzleClient(object):
         # Generates a new puzzle to store on class
         self.response = requests.get(self.joke_url)
         
-        if self.response.status_code == 201:
+        if self.response.status_code == 200:
             self.last_question = self.response.json()['question']
             self.last_answer = self.response.json()['answer']
             return True
