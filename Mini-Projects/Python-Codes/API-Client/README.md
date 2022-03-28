@@ -30,7 +30,7 @@ Esse pacote para Python é o responsável por realizar, como o próprio nome diz
 Os códigos poderão ser encontrados nesta pasta no github e possuem comentários em inglês e português, pois foram feitos para serem facilmente entendidos. Caso tenha encontrado algum problema ou tenha alguma dúvida, fique a vontade para abrir uma issue nesse repositório!
 
 <details>
-<summary>1_api_client.py</summary>
+<summary>1_api_client_puzzle.py</summary>
 
 Esse exemplo mostra a forma mais básica e simples de consumir uma API, que também possui uma interface simples. Por aí existem diversos tipos de API's que podem exigir alguns detalhes a mais, mas na essência, todos vão começar dessa forma. Com esse exemplo já é possível consumir boa parte das API's por aí.
 
@@ -62,7 +62,7 @@ print(answer)
 </details>
 
 <details>
-<summary>2_class_api_client.py</summary>
+<summary>3_class_api_client_puzzle.py</summary>
 
 Esse exemplo é semelhante ao anterior, no entanto foi feito para que usuários iniciantes possam não só aprender a utilizar a tecnologia, mas também começar a se preocupar com a organização do código e como podem organizá-lo para melhorar seus projetos. A forma como está aqui não necessariamente é correta nem completa, apenas dá uma noção de POO para que o código fique melhor.
 
@@ -132,6 +132,95 @@ class PuzzleClient(object):
             return True
         else:
             return False
+```
+
+</details>
+
+<details>
+<summary>2_api_client_weather.py</summary>
+
+Esse exemplo é semelhante ao primeiro, no entanto em vez de consumir uma API de puzzles, o usuário precisa entrar com o nome de uma cidade para que a API retorne a temperatura e velocidade do vento dessa cidade.
+
+```python
+# Importa o módulo responsável pela execução das funções
+# Import the module responsible for executing the functions
+import requests
+
+# Realiza uma requisição GET na url do weather fornecida pelo autor da API
+# Makes an GET quest on the url given by the API author
+# https://github.com/robertoduessmann/weather-api
+city = 'Sao Paulo'
+result = requests.get('https://goweather.herokuapp.com/weather/{city}'.format(city=city))
+
+# Imprime o resultado cru e em formato json do request feito
+# Print raw and json result from the request
+print(result.json())
+
+# Acessa os campos da temperatura e velocidade do vento e armazena em uma variável
+# Access temperature and wind velocity fields and store on a variable
+temperature = result.json()['temperature']
+wind = result.json()['wind']
+
+# Exibe resultado do puzzle
+# Shows puzzle results
+print('Temperature: {temperature}'.format(temperature=temperature))
+print('Wind: {wind}'.format(wind=wind))
+```
+
+</details>
+
+<details>
+<summary>4_class_api_client_puzzle.py</summary>
+
+Esse exemplo é semelhante ao anterior, no entanto foi feito para que usuários iniciantes possam não só aprender a utilizar a tecnologia, mas também começar a se preocupar com a organização do código e como podem organizá-lo para melhorar seus projetos. A forma como está aqui não necessariamente é correta nem completa, apenas dá uma noção de POO para que o código fique melhor.
+
+- Código que executa as funções criadas
+```python
+# Importa classe criada para facilitar as requisições e resultados
+# Import class created to handle requests functions and results
+from WeatherClient import WeatherClient
+
+# Exibe o resultado do clima da cidade requerida na função
+# Shows weather results on required city
+def main():
+    weather = WeatherClient()
+    weather.print_weather_from_city('Sao Paulo')
+    
+if __name__ == "__main__":
+    main()
+```
+
+- Código da classe criada
+```python
+import requests
+
+class WeatherClient(object):
+    def __init__(self):
+        # Iniciando apenas com a Url da API
+        # Starting only with API Url
+        self.weather_url = 'https://goweather.herokuapp.com/weather/'
+        self.response = None
+        self.last_city = ''
+        self.last_temperature = ''
+        self.last_wind = ''
+
+    def get_last_weather_info(self):
+        # Retorna o último clima capturado pela API
+        # Return last weather captured from API
+        return [self.last_city, self.last_temperature, self.last_wind]
+
+    def print_weather_from_city(self, city) -> None:
+        self.response = requests.get(self.weather_url + city)
+        
+        if self.response.status_code == 200:
+            self.last_city = city
+            self.last_temperature = self.response.json()['temperature']
+            self.last_wind = self.response.json()['wind']
+            print('{city} Temperature: {temperature}'.format(city=self.last_city, temperature=self.last_temperature))
+            print('{city} Wind: {wind}'.format(city=self.last_city, wind=self.last_wind))
+        else:
+            print('An error occurred, try again later.')
+
 ```
 
 </details>
