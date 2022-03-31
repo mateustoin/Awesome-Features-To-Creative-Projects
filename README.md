@@ -41,5 +41,39 @@
     <td>Python</td>
     <td><a href="">Clique Aqui</a></td>
   </tr>
+
+  <tr>
+    <td>Modificador de voz com Python</td>
+    <td>Com este mini projeto você será capaz de utilizar um arquivo de áudio de voz para modificar suas propriedades e alterá-la, para deixar mais grossa, mais fina, mais rápida ou talvez mais lenta...</td>
+    <td>Python</td>
+    <td><a href="">Clique Aqui</a></td>
+  </tr>
+
+  <tr>
+    <td>Comunicação Serial com Arduino</td>
+    <td>Aqui você encontrará o básico para enviar comandos e mensagens para o Arduino, também receber comandos e mensagens do Arduino através do Python, aumentando o potencial dos projetos que podem ser feitos com todos os recursos e ferramentas que o Python oferece.</td>
+    <td>Python</td>
+    <td><a href="">Clique Aqui</a></td>
+  </tr>
+<!--
+  <tr name="Começa divisão">
+    <td rowspan="3">Comunicação Serial com Arduino</td>
+    <td rowspan="3">Descrição</td>
+    <td>Python</td>
+    <td><a href="">Clique Aqui</a></td>
+    </tr>
+    
+  <tr>
+    <td>C</td>
+    <td><a href="">Clique Aqui</a></td>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td><a href="">Clique Aqui</a></td>
+  </tr>
+
+-->
+
 </tbody>
+
 </table>
