@@ -1,0 +1,34 @@
+- Onde baixar instalador online
+    - Site (qt.io/download)
+    - Página open source
+    - Download
+- Instalação
+    - Welcome
+    - Setup - Qt
+    - Installation Folder
+    - Select Components
+    - License Agreement
+    - Ready to install
+    - Installing
+    - Finished
+- Criando primeiro projeto
+    - Create New Project
+    - Application → Qt Widgets Application
+    - Location (local do projeto) → Build System (Cmake) → Details (igual) → Translation (igual) → Kits (Desktop Qt 6.2.4) → Summary (finish)
+    - Build → Run
+    - Tela em branco
+- Qt Maitenance Tool
+    - Login
+    - Add or remove components
+    - Filter LTS → Qt 6.2.4
+        - Desktop gcc 64-bit
+        - Android (adicionar referência)
+        - Aditional Libraries
+            - Qt Charts (adicionar referência)
+            - Qt Connectivity (adicionar referência)
+            - Qt Multimedia (adicionar referência)
+            - Qt Positioning (adicionar referência)
+            - Qt Serial Port (adicionar referência)
+            - Qt WebSockets (adicionar referência)
+            - Qt Webview (adicionar referência)
+    - Next → Finish
