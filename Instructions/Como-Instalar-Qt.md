@@ -7,16 +7,16 @@ Esse guia servirá para instalar a versão mais atual do Qt para que possa ser u
 -->
 
 <a href="https://youtu.be/0STf7fhVM1k
-" target="_blank"><img src="../assets/assets-qt/thumbnail-qt.png" 
+" target="_blank"><img src="https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/thumbnail-qt.png?raw=true" 
 alt="Vídeo sobre instalação do Qt" border="5" /></a>
 
 ## 1. Onde baixar o instalador online
 
 Acesse a [página de download](https://www.qt.io/download), depois vá até seção *Downloads for open source users* e clique em *Go open source*. Lá dentro, você encontrará a opção *Download the Qt Online Installer*, basta clicar e aguardar o download finalizar.
 
-![Figura 1. Go open source](../assets/assets-qt/fig1.png)
+![Figura 1. Go open source](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig1.png?raw=true)
 
-![Figura 2. Download the Qt Online Installer]()
+![Figura 2. Download the Qt Online Installer](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig2.png?raw=true)
 
 ## 2. Instalação
 
@@ -24,7 +24,7 @@ Acesse a [página de download](https://www.qt.io/download), depois vá até seç
 
 Se estiver instalando no windows, basta executar o arquivo de instalação. No Linux, primeiro é necessário transformar o arquivo em algo executável, para conseguir abrí-lo. Existem duas formas de fazer isso. A primeira é através da interface gráfica, abrindo a pasta e clicando com botão direito no instalador, *Propriedades -> Permissões -> Permitir execução do arquivo como um programa*. 
 
-![Figura 3. Permissão de execução do instalador]()
+![Figura 3. Permissão de execução do instalador](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig3.png?raw=true)
 
 A segunda forma é abrindo a pasta onde o arquivo pelo terminal e digitar o seguinte comando:
 
@@ -40,21 +40,21 @@ Executar pelo terminal nos dá a vantagem de ter uma noção melhor do que está
 
 Nessa tela será necessário fazer o login, então basta criar uma conta grátis a partir do botão *Sign up* ou no site em que foi feito o download do instalador.
 
-![Figura 4. Criação de conta para acessar os serviços]()
+![Figura 4. Criação de conta para acessar os serviços](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig4.png?raw=true)
 
 Após isso, basta aceitar os termos e condições, além de aceitar que o uso não é comercial, pois estaremos utilizando principalmente para o desenvolvimento de protótipos e projetos pessoais.
 
-![Figura 5. Aceitando termos necessários]()
+![Figura 5. Aceitando termos necessários](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig5.png?raw=true)
 
 ### 2.3 Contribuição, Pasta e acordo
 
 Na seção de contribuição, você decide se quer ajudar com dados estatísticos ou não. Depois disso pode ser escolhida a pasta padrão, que particularmente sempre deixo o padrão, além de poder escolher a versão LTS mais nova para desenvolver com o Qt que é a 6.2 e as bibliotecas necessárias para desenvolver para Android e iOS (dispositivos móveis), que pode ser útil no futuro.
 
-![Figura 6. Pasta de instalação e Bibliotecas básicas]()
+![Figura 6. Pasta de instalação e Bibliotecas básicas](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig6.png?raw=true)
 
 Com isso, basta aceitar os acordos de licença e aguardar o download e instalação. Pode demorar um pouco, por ter que baixar muitos arquivos, mas assim que acabar poderemos testar, criando o primeiro projeto. Quando finalizar, marque para inicializar a IDE Qt Creator.
 
-![Figura 7. Execução do Qt Creator após fim da instalação]()
+![Figura 7. Execução do Qt Creator após fim da instalação](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig7.png?raw=true)
 
 ## 3. Criando primeiro projeto
 
@@ -62,7 +62,7 @@ Com isso, basta aceitar os acordos de licença e aguardar o download e instalaç
 
 Após abrir o Qt Creator, a IDE possui diversas áreas em sua interface para acessar. Aqui estão a descrição de algumas delas:
 
-![Figura 8. Interface Inicial do Qt Creator]()
+![Figura 8. Interface Inicial do Qt Creator](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig8.png?raw=true)
 
 1. Área de criação e configuração básica de projetos
 2. Abrir um projeto existente
@@ -82,51 +82,51 @@ Após abrir o Qt Creator, a IDE possui diversas áreas em sua interface para ace
 
 Agora precisamos validar a instalação e ver se tudo está funcionando corretamente. Para isso, basta clicar em *Create Project...* e com isso abrirá uma janela com várias opções de projetos. Inicialmente testaremos a Qt Widgets Application. *Application (Qt) -> Qt Widgets Application -> Choose...*
 
-![Figura 9. Escolhendo template de projeto]()
+![Figura 9. Escolhendo template de projeto](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig9.png?raw=true)
 
 Em *Location*, escolha um *nome* para o projeto e a *localização* dele no computador, depois prossiga.
 
-![Figura 10. Escolhendo nome do projeto e localização]()
+![Figura 10. Escolhendo nome do projeto e localização](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig10.png?raw=true)
 
 Em *Build System*, escolha *CMake* de preferência, pois é o novo padrão adotado a partir do Qt 6.
 
-![Figura 11. Escolhendo sistema de build do projeto]()
+![Figura 11. Escolhendo sistema de build do projeto](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig11.png?raw=true)
 
 Em *Details* serão informados os nomes referentes a classe que estará no esqueleto do projeto. O nome da classe que irá compor a janela principal da interface, além da criação do form para o design dessa tela. Não precisa mudar nada, apenas manter o padrão e prosseguir.
 
-![Figura 12. Definindo informações da classe principal]()
+![Figura 12. Definindo informações da classe principal](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig12.png?raw=true)
 
 Em *Translation* não precisa modificar nada, pois não trabalharemos inicialmente com nenhum software que possua línguas diferentes.
 
-![Figura 13. Definindo traduções para o software]()
+![Figura 13. Definindo traduções para o software](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig13.png?raw=true)
 
 Em *Kits*, selecionaremos o kit relacionado ao Desktop, já que inicialmente estaremos apenas trabalhando com aplicações desktop. Se estiver no Windows, recomendo a utilização do kit com MINGW.
 
-![Figura 14. Escolhendo Kit Desktop]()
+![Figura 14. Escolhendo Kit Desktop](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig14.png?raw=true)
 
 Depois disso, em *Summary*, caso não vá utilizar controle de versão (git) no projeto, basta finalizar.
 
-![Figura 15. Finalizando Projeto]()
+![Figura 15. Finalizando Projeto](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig15.png?raw=true)
 
 ### 3.3 Executando projeto
 
 A tela que abrirá será parecida com a da imagem abaixo. Tudo que precisa fazer para validar a instalação, é clicar em **1** e esperar o processo de build. Depois que a build do projeto estiver completa, basta clicar em **2** e executar o projeto, que deverá mostrar uma janela igual a **3**.
 
-![Figura 15. Execução do Projeto]()
+![Figura 16. Execução do Projeto](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig16.png?raw=true)
 
 ## 4. Adicionando bibliotecas extras / Qt maitenance Tool
 
 Com tudo instalado, note que agora você também possui um programa chamado *Qt Maitenance Tool* instalado junto com o Qt Creator. Ele é responsável por fazer os updates do que você tem instalado, mas também pode remover componentes, adicionar outros ou até desinstalar tudo. Abrindo ele, basta fazer o login, assim como na instalação e chegará na página a seguir:
 
-![Figura 16. Abrindo página de adição de componentes]()
+![Figura 17. Abrindo página de adição de componentes](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig17.png?raw=true)
 
 Clique em adicionar componentes, pois é o que faremos a seguir. Após aguardar o carregamento, basta deixar selecionado apenas a opção *LTS (Long Term Support* e clicar em *Filter*, para filtrar apenas os produtos LTS, que são os que usaremos. Todas as versões LTS do Qt aparecerão, como pode ser visto na imagem a seguir:
 
-![Figura 17. Filtrando versão LTS dos componentes]()
+![Figura 18. Filtrando versão LTS dos componentes](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig18.png?raw=true)
 
 Como trabalharemos apenas com o Qt 6, então podemos abrir a aba *Qt 6.2.x*, dependendo de quando você ver esse guia, depois será possível ver todos os componentes dessa versão que já temos instalado, que são basicamente 2: o compilador, que no caso do Linux é o Desktop gcc e o componente Android. Para finalizar o propósito da instalação, basta abrir a sub aba chamada *Additional Libraries* para instalar as bibliotecas que utilizaremos em projetos futuros. Caso queira saber mais sobre elas, basta assistir o vídeo mencionado no início do guia.
 
-![Figura 18. Bibliotecas adicionais que recomendo instalar]()
+![Figura 19. Bibliotecas adicionais que recomendo instalar](https://github.com/bittoin/Awesome-Features-To-Creative-Projects/blob/main/assets/assets-qt/fig19.png?raw=true)
 
 As bibliotecas selecionadas estão listadas abaixo:
 
