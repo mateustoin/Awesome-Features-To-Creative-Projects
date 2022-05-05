@@ -35,7 +35,7 @@ A instalação do pygamme não é obrigatória. Esse pacote é bem famoso e bast
 
 Caso tenha algum problema com a instalação, recomendo que olhe o [repositório oficial do projeto](ColocarRepositorioAqui), que possui mais detalhes relacionados a dependências e do que o pacote pode precisar a mais para funcionar.
 
-## Mini Projetos
+## Mini Projetos - Exemplos de códigos
 
 Os códigos poderão ser encontrados nesta pasta no github e possuem comentários em inglês e português, pois foram feitos para serem facilmente entendidos. Caso tenha encontrado algum problema ou tenha alguma dúvida, fique a vontade para abrir uma issue nesse repositório!
 
